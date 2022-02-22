@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- My color -->
+    <color name="green_primary">#388e3c</color>
+    <color name="green_primary_light">#6abf69</color>
+    <color name="green_primary_dark">#00600f</color>
+
+    <color name="green_secondary">#ccff90</color>
+    <color name="green_secondary_light">#ffffc2</color>
+    <color name="green_secondary_dark">#99cc60</color>
+
+</resources>
