@@ -5,9 +5,12 @@ import com.example.appselecttest.domain.model.MovieDomainModel
 import com.example.appselecttest.domain.model.NetworkStatus
 import com.example.appselecttest.domain.model.SuccessRequest
 import com.example.appselecttest.domain.usecase.GetMovieUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MovieViewModel(private val useCase: GetMovieUseCase) : ViewModel() {
+@HiltViewModel
+class MovieViewModel @Inject constructor (private val useCase: GetMovieUseCase) : ViewModel() {
 
     private val _status = MutableLiveData<NetworkStatus>()
     val status: LiveData<NetworkStatus> = _status
